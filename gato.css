@@ -6,6 +6,13 @@ body{
 }
 h1,h3,h4{
     font-size: 20px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    z-index: 5;
+}
+
+h1{
+    font-size: 4rem;
 }
 
 h1:nth-of-type(1){
@@ -13,7 +20,7 @@ h1:nth-of-type(1){
     font-family: cursive;
     position: absolute;
     left:45%;
-    top:25%;
+    top:20%;
     transform-origin: left;
     transform: rotate(25deg);
     opacity: 0;
@@ -31,7 +38,7 @@ h1:nth-of-type(2){
     transform-origin: left;
     transform: rotate(25deg);
     opacity: 0;
-    animation: dispersar 5s linear 3s infinite;
+    animation: dispersar 5s linear) 3s infinite;
 }
 h1:nth-of-type(3){
     color: aliceblue;
@@ -42,7 +49,7 @@ h1:nth-of-type(3){
     opacity: 0;
     transform-origin: left;
     transform: rotate(25deg);
-    animation: dispersar 7s linear 7s infinite ;
+    animation: dispersar 7s linear 5s infinite ;
 }
 
 h3{
@@ -50,7 +57,7 @@ h3{
     font-family: cursive;
     position: absolute;
    
-    bottom:25%;
+    bottom:10%;
 }
 
 h4{
@@ -58,14 +65,14 @@ h4{
     font-family: cursive;
     position: absolute;
    
-    bottom:15%;
+    bottom:5%;
 }
 
 @keyframes dispersar {
     0%{
         position: absolute;
         left:47%;
-        top:37%;
+        top:20%;
         transform-origin: left;
         transform: rotate(25deg);
         opacity: 1;
@@ -88,8 +95,8 @@ h4{
     align-items: center;
     /* width: 95vw;
     height: 80vh; */
-    width: 95vw;
-    height: 40vh;
+    width: 100vmax;
+    height:50vmax;
     border-radius: 50%;
     background-color: rgb(28, 28, 54);
     position: relative;
