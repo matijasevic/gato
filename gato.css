@@ -4,91 +4,8 @@ body{
     justify-content:center;
     align-items:center;
 }
-h1,h3,h4{
-    font-size: 20px;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    z-index: 5;
-}
 
-h1{
-    font-size: 4rem;
-}
-
-h1:nth-of-type(1){
-    color: aliceblue;
-    font-family: cursive;
-    position: absolute;
-    left:45%;
-    top:20%;
-    transform-origin: left;
-    transform: rotate(25deg);
-    opacity: 0;
-    
-
-    animation: dispersar 3s linear 1s  infinite;
-}
-
-h1:nth-of-type(2){
-    color: aliceblue;
-    font-family: cursive;
-    position: absolute;
-    left:50%;
-    top:20%;
-    transform-origin: left;
-    transform: rotate(25deg);
-    opacity: 0;
-    animation: dispersar 5s linear) 3s infinite;
-}
-h1:nth-of-type(3){
-    color: aliceblue;
-    font-family: cursive;
-    position: absolute;
-    left:55%;
-    top:15%;
-    opacity: 0;
-    transform-origin: left;
-    transform: rotate(25deg);
-    animation: dispersar 7s linear 5s infinite ;
-}
-
-h3{
-    color: aliceblue;
-    font-family: cursive;
-    position: absolute;
-   
-    bottom:10%;
-}
-
-h4{
-    color: aliceblue;
-    font-family: cursive;
-    position: absolute;
-   
-    bottom:5%;
-}
-
-@keyframes dispersar {
-    0%{
-        position: absolute;
-        left:47%;
-        top:20%;
-        transform-origin: left;
-        transform: rotate(25deg);
-        opacity: 1;
-
-    }
-    100%{
-        position: absolute;
-        left:55%;
-        top:15%;
-        transform-origin: left;
-        transform: rotate(-25deg);
-        opacity: 0;
-        transform: scale(2.5);
-    }
-}
-
+/*Contenedor Gral*/
 .container{
     display: flex;
     justify-content: center;
@@ -114,7 +31,108 @@ h4{
    
 }
 
+/*Z Z Z*/
+/* .z-container{
+    display: flex;
+    position: relative;
+    top: 150%;
+    color: aquamarine;
+    width:20px;
+    height: 20px;
+} */
 
+h1,h3,h4{
+    font-size: 3vmax;
+    padding-left: 8%;
+    padding-right: 8%;
+    z-index: 5;
+}
+
+/* h1{
+    font-size: medium;
+} */
+
+h1:nth-of-type(1){
+    color: aliceblue;
+    font-family: cursive;
+    position: absolute;
+    left:45%;
+    top:20%;
+    transform-origin: left;
+    transform: rotate(25deg);
+    opacity: 0;
+    animation: dispersar 3s linear 1s  infinite;
+}
+
+h1:nth-of-type(2){
+    color: aliceblue;
+    font-family: cursive;
+    position: absolute;
+    left:50%;
+    top:20%;
+    transform-origin: left;
+    transform: rotate(25deg);
+    opacity: 0;
+    animation: dispersar 5s linear 3s infinite;
+}
+h1:nth-of-type(3){
+    color: aliceblue;
+    font-family: cursive;
+    position: absolute;
+    left:55%;
+    top:15%;
+    opacity: 0;
+    transform-origin: left;
+    transform: rotate(25deg);
+    animation: dispersar 7s linear 5s infinite ;
+}
+
+@keyframes dispersar {
+    0%{
+        /* position: relative;
+        vertical-align: middle;
+        justify-items:center ; */
+        /* left:20%; */
+        top:30%;
+        transform-origin: left;
+        transform: rotate(25deg);
+        opacity: 1;
+        font-size: medium;
+
+    }
+    100%{
+        /* position: relative;
+        vertical-align: middle;
+        justify-items:right ; */
+        /* left:25%; */
+        top:15%;
+        transform-origin: left;
+        transform: rotate(-25deg);
+        opacity: 0;
+        font-size: x-small;
+        transform: scale(2.5);
+    }
+}
+
+
+/*Texto aviso*/
+h3{
+    color: aliceblue;
+    font-family: cursive;
+    position: absolute;
+   
+    bottom:15%;
+}
+
+h4{
+    color: aliceblue;
+    font-family: cursive;
+    position: absolute;
+   
+    bottom:5%;
+}
+
+/*Gato*/
 .gato-cuerpo{
     /* width: 140px; */
     /* height: 80px; */
@@ -183,12 +201,12 @@ h4{
     width:25%;
     height:28.6%;
     background-color:rgb(116, 66, 10);
-    border-top-right-radius: 150px;
-    border-bottom-left-radius: 50px;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 50px;
     position: absolute;
     left:-6.25%;
     top:-14.285%;
-    transform: rotate(-120deg);
+    transform: rotate(-25deg);
     z-index:2;
 } 
 
@@ -373,13 +391,13 @@ h4{
 
 
 .gato-cola-1{
-    width: 28.58%;
+    width: 38%;
     height: 50%;
     background-color: rgb(167, 117, 26);;
-    border-top-left-radius: 180px;
-    border-top-right-radius: 180px;
-    border-bottom-left-radius: 180px;
-    border-bottom-right-radius: 180px;
+    border-top-left-radius: 75%;
+    border-top-right-radius: 95%;
+    border-bottom-left-radius: 75%;
+    border-bottom-right-radius: 95%;
     /* transform: rotate(45deg); */
     transform-origin: left;
     position: absolute;
@@ -402,14 +420,14 @@ h4{
 }
 
 .gato-cola-2{
-    width: 28.58%;
+    width: 38%;
     height: 50%;
    background-color: rgb(167, 117, 26);;
-    border-top-left-radius: 180px;
-    border-top-right-radius: 180px;
-    border-bottom-left-radius: 180px;
-    border-bottom-right-radius: 180px;
-    transform: rotate(50deg);
+    border-top-left-radius: 75%;
+    border-top-right-radius: 95%;
+    border-bottom-left-radius: 75%;
+    border-bottom-right-radius: 95%;
+    transform: rotate(5deg);
     transform-origin: left;
     position: absolute;
     left:160px;
@@ -432,14 +450,14 @@ h4{
 
 
 .gato-cola-3{
-    width: 28.58%;
+    width: 38%;
     height: 50%;
    background-color: rgb(167, 117, 26);;
-    border-top-left-radius: 180px;
-    border-top-right-radius: 180px;
-    border-bottom-left-radius: 180px;
-    border-bottom-right-radius: 180px;
-    transform: rotate(55deg);
+    border-top-left-radius: 75%;
+    border-top-right-radius: 95%;
+    border-bottom-left-radius: 75%;
+    border-bottom-right-radius: 95%;
+    transform: rotate(-10deg);
     transform-origin: left;
     position: absolute;
     left:180px;
@@ -451,24 +469,28 @@ h4{
 
 @keyframes colear-3{
     0%{
-        left:114.2857%;
-        top:75%;
+        left:130%;
+        bottom:160%;
+        transform: rotate(-10deg);
+        transform-origin: left;
     }
     100%{
         left:100%;
         top:100%;
+        transform: rotate(10deg);
+        transform-origin: left;
     }
 }
 
 .gato-cola-4{
-    width: 28.58%;
+    width: 38%;
     height: 50%;
     background-color: rgb(167, 117, 26);;
-    border-top-left-radius: 180px;
-    border-top-right-radius: 180px;
-    border-bottom-left-radius: 180px;
-    border-bottom-right-radius: 180px;
-    transform: rotate(100deg);
+    border-top-left-radius: 75%;
+    border-top-right-radius: 95%;
+    border-bottom-left-radius: 75%;
+    border-bottom-right-radius: 95%;
+    transform: rotate(15deg);
     position: absolute;
     left:190px;
     top:60px;
@@ -480,11 +502,13 @@ h4{
 @keyframes colear-4{
     0%{
         left:100%;
-        top:112.5%;
+        bottom:180%;
+        transform: rotate(-150deg);
     }
     100%{
-        left:78.571%;
-        top:137.5%;
+        left:110%;
+        top:120%;
+        transform: rotate(150deg);
     }
 }
 
