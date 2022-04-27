@@ -30,7 +30,15 @@ body{
     border: 5px rgb(28, 28, 54) dotted;
    
 }
-
+a{
+    background-color: rgb(16, 16, 31);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 3vmax;
+    padding-left: 8%;
+    padding-right: 8%;
+}
 /*Z Z Z*/
 /* .z-container{
     display: flex;
